@@ -5,3 +5,18 @@
 .calculator{
    margin-top: 100px;
 }
+.form-control input:focus{
+    outline: 0;
+    border: #777;
+}
+
+.form-control.success input{
+    border-color: #42cc6b;
+}
+.form-control.error input{
+    border-color: #d33434;
+}
+.form-control small{
+    color: #d33434;
+
+}

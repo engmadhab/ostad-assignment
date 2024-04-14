@@ -12,31 +12,40 @@
     <div class="calculator">
         <div class="container">
             
-                <form action="#">
+                <form action="#" class="calculatorForm" id="calculatorForm">
                     <div class="row">
                         <div class="col">
-                            <label for="firstInput" class="form-label">Enter first number</label>
-                            <input type="number" class="form-control" placeholder="Type numeric number" id="firstInput" aria-label="Enter first number" required>
+                            <div class="form-control">
+                                <label for="firstInput" class="form-label">Enter first number</label>
+                                <input type="text" class="form-control" placeholder="Type numeric number" id="firstInput" aria-label="Enter first number" required>
+                                <small></small>
+                            </div>
                         </div>
                         <div class="col">
-                            <label for="secondInput" class="form-label">Select an Operator</label>
-                            <select class="form-select" id="operator">
-                                <option selected>Select One</option>
-                                <option value="+">Addition (+)</option>
-                                <option value="-">Subtraction (-)</option>
-                                <option value="*">Multiplication (*)</option>
-                                <option value="/">Division (/)</option>
-                            </select>
+                            <div class="form-control">
+                                <label for="secondInput" class="form-label">Select an Operator</label>
+                                <select class="form-select" id="operator" required>
+                                    <option value="">Select One</option>
+                                    <option value="+">Addition (+)</option>
+                                    <option value="-">Subtraction (-)</option>
+                                    <option value="*">Multiplication (*)</option>
+                                    <option value="/">Division (/)</option>
+                                </select>
+                            </div>
+                            
                         </div>
                         <div class="col">
-                            <label for="secondInput" class="form-label">Enter second Number</label>
-                            <input type="number" id="secondInput" class="form-control" placeholder="Type numeric number" required>
+                            <div class="form-control">
+                                <label for="secondInput" class="form-label">Enter second Number</label>
+                                <input type="number" id="secondInput" class="form-control" placeholder="Type numeric number" required>
+                                <small></small>
+                            </div>
                         </div>
                     </div>
                     
 
                     <div class="col-12 mt-3">
-                        <button type="button" class="btn btn-primary" onclick="calculate()">Calculate</button>
+                        <button type="submit" class="btn btn-primary" onclick="calculate()">Calculate</button>
                     </div>
                     
                 </form>
